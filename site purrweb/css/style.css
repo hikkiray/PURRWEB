@@ -1,0 +1,926 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* noto-sans-regular - latin */
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/noto-sans-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-sans-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* noto-sans-700 - latin */
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/noto-sans-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/noto-sans-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+} 
+
+body{
+  background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header styles start ----------------------------------------------------------*/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .3s linear;
+  padding-bottom: 5px;
+}
+.header_active{
+background: #160d15;
+box-shadow: 5px 1px 5px #0f0e0e;
+z-index: 999;
+}
+
+
+.header__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  margin-top: 25px;
+}
+.header__nav{
+  padding-left: 108px;
+}
+
+.header__link:last-child{
+  border-bottom: 2px solid #fff;
+}
+
+.header__link{
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__link:hover{
+  opacity: .75;
+}
+.header__link:active{
+  opacity: 0.30;
+}
+
+  .wrapper{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Header styles end ----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Intro styles start ----------------------------------------------------------*/
+
+.intro{
+  height: 100vh;
+  background: url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 275px;
+}
+
+
+
+.intro__title{
+max-width: 643px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 70px;
+margin-bottom: 129px;
+/* or 109% */
+color: #fff;
+display: flex;
+align-items: flex-end;
+}
+.phone-img{
+  margin-right: 30px;
+  transform: translateY(-19%); 
+}
+.intro__subtitle{
+margin-bottom: 267px;
+margin-left: 105px;
+max-width: 380px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 27px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+} 
+
+.downloadpanel__title{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 70px;
+/* identical to box height, or 200% */
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.downloadpanel{
+  max-width: 1240px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.intro__downloadpanel__link{
+  margin-right: 28px;
+}
+.intro__downloadpanel__link:hover{
+opacity: .75;
+}
+
+.intro__downloadpanel__link:active{
+  opacity: .30;
+  }
+
+.intro__downloadpanel__link:last-child{
+  margin-right: 0;
+}
+
+
+/* Intro styles end ----------------------------------------------------------*/
+
+/* Cookies styles start ---------------------------------------------------------*/
+
+.cookies__text{
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+color: #FFFFFF;
+}
+
+.cookies__wrap{
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 93px;
+}
+
+
+/* Cookies styles end ---------------------------------------------------------*/
+
+/* Our mission styles start ----------------------------------------------------------*/
+
+.mission__wrapper{
+  padding-top: 61px;
+  max-width: 1125px;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+.mission__cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 81px;
+}
+
+.ask__card{
+padding: 64px 73px 64px 55px;
+border: 2px solid rgba(255, 255, 255, 0.5);
+box-sizing: border-box;
+border-radius: 21.3671px;
+}
+
+.ask__card:last-child{
+  padding: 97px 0px 0px 54px;
+}
+.mission__card__mail{
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+color: #FFFFFF;
+}
+
+.mission__card__mail:hover{
+  opacity: 0.75;
+}
+
+
+.mission__card__title{
+margin-bottom: 30px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 41px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.mission__info{
+  margin-top: 246px;
+}
+
+.mission__vision{
+  margin-left: 30px;
+}
+
+.vision__title{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 51px;
+  line-height: 62px;
+  display: flex;
+  align-items: flex-end;
+  
+  color: #FFFFFF;
+}
+
+.vision__text{
+  margin-top: 23px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: flex-end;
+  
+  color: #FFFFFF;
+}
+
+.phone__horizontal{
+  transform: translateX(-45%);
+}
+.mission__info__wrapper{
+  max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+/* Our mission styles end ----------------------------------------------------------*/
+
+
+/*Id verification styles start ----------------------------------------------------*/
+
+.barman{
+margin-top: 283px;
+height: 100vh;
+background: url(../img/barman.jpg) no-repeat center;
+background-size: cover;
+}
+
+.scaner{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 51px;
+line-height: 62px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.scaner__text{
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+.verification__wrapper{
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  
+}
+
+.verification__phone{
+  margin-right: 50px;
+  transform: translateY(-67%);
+}
+.verification__phone:last-child{
+  margin-right: 0;
+}
+.verification__info{
+  padding-left: 79px;
+}
+
+
+
+/*Id verification styles end -------------------------------------------------------*/
+
+
+/*Tool integration styles start -------------------------------------------------*/
+
+
+.integration__title{
+margin-bottom: 23px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 51px;
+line-height: 62px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.integration__text{
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+}
+.integration__wrapper{
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.integration__graphics{
+  transform: translateY(-31%);
+}
+/* Tool integration styles end ------------------------------------------------*/
+
+/* QR code section styles start ---------------------------------------------------*/
+
+.qrcode{
+margin-top: 229px;
+height: 80vh;
+background: url(../img/qrcode_bg.jpg) no-repeat center;
+background-size: cover;
+}
+
+.qrcode__wrapper{
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.qrcode__title{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 51px;
+line-height: 62px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.qrcode__text{
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.qrcode__info{
+  margin-left: 81px;
+  min-width: 315px;
+  margin-right: 142px;
+}
+
+.qrcode__phone{
+  margin-right: 81px;
+  transform: translateY(-47%);
+
+}
+.qrcode__phone:last-child{
+  margin-right: 0;
+  transform: translateY(0%);
+}
+
+.qrcode__download__btns{
+  margin-top: 68px;
+  display: flex;
+}
+
+.qr__download__btn{
+  margin-right: 28px;
+}
+.qr__download__btn:last-child
+{
+  margin-right: 0;
+}
+
+.qr__download__btn:hover{
+  opacity: .75;
+}
+.qr__download__btn:active{
+  opacity: .30;
+}
+/* QR code section styles end -----------------------------------------------------------*/
+
+
+/* QR code generation section styles start ----------------------------------------------*/ 
+
+.qr__generation{
+  background: url(../img/qrcode_generation_bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.qr__generation__wrapper{
+  padding-top: 42px;
+ display: flex;
+ justify-content: center;
+ margin-bottom: 80px;
+  
+}
+
+.qr__generation__title{
+margin-bottom: 370px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.qr__generation__phone{
+transform: translateX(30%);
+}
+
+.qr__scan{
+  transform: translateX(20%);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.arrow{
+  align-items: flex-start;
+  margin-top: 190px;
+  max-height: 70px;
+}
+
+.qr__generation__footer{
+  max-width: 1240px;
+  margin: 0  auto;
+  display: flex;
+}
+
+.footer__title{
+padding-right: 567px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 51px;
+line-height: 62px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+.footer__text{
+  font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+
+
+/* QR code generation section styles end ----------------------------------------------*/ 
+
+/* Phone tape styles start ------------------------------------------------------------ */ 
+
+.phone__tape{
+  padding-top: 229px;
+}
+
+.phone__tape__wrapper{
+  max-width: 1240px;
+  margin: 0  auto;
+  
+}
+
+.ordering__info{
+  padding-left: 759px;
+}
+
+.ordering__title{
+margin-bottom: 23px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 51px;
+line-height: 62px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+
+}
+
+.ordering__phone{
+  display: flex;
+  justify-content: center;
+}
+
+.ordering__text{
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+
+}
+/* Phone tape styles end --------------------------------------------------------------- */
+
+/* NO TAB styles start ------------------------------------------------------------------*/
+
+.notab{
+  background: url(../img/notab_bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  
+}
+
+.notab__wrapper{
+  max-width: 1240px;
+  margin: 0  auto;
+}
+
+.notab__phone{
+  transform: translateY(329px);
+  display: flex;
+  justify-content: center;
+}
+
+
+/* NO TAB styles end --------------------------------------------------------------------*/
+
+
+
+
+/* Get in touch styles start ------------------------------------------------------------*/
+.get_in_touch__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+
+.git__title{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 51px;
+line-height: 62px;
+display: flex;
+justify-content: center;
+align-items:center;
+color: #FFFFFF;
+margin-bottom: 23px;
+
+
+}
+
+.git__text{
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #FFFFFF;
+margin-bottom: 82px;
+}
+
+.get_in_touch{
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.contact__wrapper{
+  width: 818px;
+  margin: 0 auto;
+}
+.form__inputs{
+  width: 818px;
+  display: flex;
+}
+input{
+width: 100%;
+height: 83px;
+background: #FFFFFF;
+border: 1px solid #5C5C5C;
+box-sizing: border-box;
+border-radius: 10px;
+margin-bottom: 23px ;
+
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+color: #BFBFBF;
+}
+
+
+.form__venue-city{
+  width: 397px;
+  height: 83px;
+  margin-right: 24px;
+  
+}
+
+.form__state-city{
+  width: 397px;
+  height: 83px;
+  
+}
+
+.vc:first-child{
+  margin-right: 24px;
+}
+
+textarea{
+  width: 818px;
+  height: 199px;
+
+border: 1px solid #5C5C5C;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+.form__button{
+margin: 0 auto;
+margin-top: 60px;
+display: flex;
+justify-content: center;
+width: 398px;
+height: 80px;
+  background: #000000;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+.form__button:hover{
+  opacity: .75;
+}
+
+.form__button:active{
+  opacity: .35;
+}
+
+.form__button__send{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 25px;
+}
+
+.form__download-block{
+  margin-bottom: 33px;
+  display: flex;
+  justify-content: center;
+}
+
+.download-block__title{
+margin-top: 91px;  
+font-family: Noto Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+}
+
+.download-block__buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.download-block__button:first-child{
+margin-right: 60px;
+}
+
+.download-block__button:hover{
+opacity: .75;
+}
+.download-block__button:active{
+opacity: .35;
+}
+/* Get in touch styles end --------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer section styles start ----------------------------------------------------------*/
+.footer{
+  padding: 160px 0;
+  height: 100%;
+  background: url(../img/bgfooter/bgfooter.jpg) no-repeat;
+  background-size: cover;
+}
+.footer__wrapper{
+margin-top: 156px;
+max-width: 1240px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+}
+
+.company__contacts__title{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 29px;
+line-height: 29px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+margin-bottom: 17px;
+
+color: #FFFFFF;
+}
+
+.footer__company__contacts__email{
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+
+color: #FFFFFF;
+}
+
+.contacts__email{
+  
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+
+
+color: #FFFFFF;
+text-decoration: none;
+
+}
+.footer__company__contacts__copyleft{
+  font-family: Noto Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+margin-top: 20px;
+
+color: #FFFFFF;
+}
+
+.footer__menu-link{
+  font-family: Noto Sans;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+text-decoration: none;
+text-align: right;
+
+color: #FFFFFF;
+}
+.footer__menu-item:first-child{
+  margin-bottom: 25px;
+}
+.footer__menu-item:hover{
+  opacity: .75;
+}
+/* Footer section styles end ------------------------------------------------------------*/
